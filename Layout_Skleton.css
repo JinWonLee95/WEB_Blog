@@ -1,0 +1,73 @@
+body{
+	background-color : #22655E;
+	width : 100%;
+}
+
+#header{
+	background-color : #1E6912;
+	padding-left : 20px;
+	padding-top : 20px;
+	color : #9CF1EC;
+	font-family:Impact;
+	border : solid 2px white;
+	text-align: center
+}
+
+#middleBar{
+	border : 5px;
+	border : solid 2px white;
+	height : 100px;
+	border-radius : 5px;
+	color : white;
+	text-align : center;
+	background-color: #39872D;
+}
+
+#contentWrapper{
+	margin-top : 10px;
+}
+
+#dropDownMenu{
+	;
+}
+
+#sideBar{
+	background-color : #1E6912;
+	float:left;
+	color : white;
+	border : solid 2px white;
+	min-height : 600px;
+	height : 100%;
+	border-radius : 5px;
+	
+}
+
+#content{
+	float : right;
+	text-align : center;
+	color : white;
+	border : solid 2px white;
+	min-height : 800px;
+	border-radius : 5px;
+	min-height : 600px;
+	height : 100%;
+	position : relative;
+}
+
+#WritingForm{
+	position : absolute;
+	margin-left : 38%;
+	background-color : #39872D;
+}
+input{
+	color : black;
+}
+
+#article{
+	color : black;
+}
+
+#postingList{
+	font-size : px;
+}
+

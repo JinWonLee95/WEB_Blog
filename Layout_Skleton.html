@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<meta charset = "utf-8"/>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+	<link type = "text/css" rel = "stylesheet" href = "Layout_Skleton.css"/>	
+
+	<title> Term Project #1 </title>
+	<script src = "Layout_Skleton.js"></script>
+</head>
+
+<body>
+	<header id = "header" class ="jumbotron">
+		<h1 id = "h_Font">이진원의 블로그 </h1>
+	</header>
+
+	<!-- Middle Bar -->
+	<nav id = "middleBar" onmouseover = "dropDown()" onmouseout = "returnBack()" class = "container-fluid">
+		<h2> Middle Bar </h2>
+		<div id = "dropDownMenu" style="display:none" class = "btn-group">
+			<input type="button" onclick="showpostingform()" value ="추가"></input>
+			<input type="button" onclick="indexpost()" value = "Index 지정 추가"></input>
+		</div>
+	</nav>
+
+	<!-- Side Bar와 Content 감싸는 wrapper -->
+	<div id = "contentWrapper">
+
+		<!-- Side Bar -->
+		<nav id = "sideBar" class="col-sm-2">
+			<ol id = "postingList">
+			</ol>
+			</nav>
+
+		<!-- Content 글이나 이미지 들어가는 부분-->
+		<section id = "content" class = "col-sm-10">
+			<div id = "WritingForm" style ="display:none">
+				<div>
+					제목  <input id = "title" type = "text" style = "width:300px" class = "container"></input><br/>
+				</div>
+
+				<div>
+					<textarea id = "article" rows ="10" cols = "50" ></textarea>
+				</div>
+				<div>
+
+					<input id = "imgInput" type = "file" accept="image/*" multiple/>
+
+				</div>
+				<div class = "btn-group">
+					<input class = "btn btn-primary" type = "button" value = "등록" onclick = "post()"/>
+					<input class = "btn btn-primary" type = "button" value = "닫기" onclick ="closeposting()"/>
+				</div>
+			</div>
+			<div id = "postingArea">
+			</div>
+		</section>
+	</div>
+</body>
+
+</html>
